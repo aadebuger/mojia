@@ -1,0 +1,16 @@
+version: '2'
+services:
+
+
+
+
+ arduino:
+    image: mojia
+    privileged: true
+    ports:
+      - "8888:8888" 
+    volumes:
+       - ./codews:/codews
+#       - /dev/cu.wchusbserial14540:/dev/ttyUSB0
+    tty: true
+
